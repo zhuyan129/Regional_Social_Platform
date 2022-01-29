@@ -1,14 +1,44 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/home/home",
+    "pages/recommend/recommend",
+    "pages/platform/platform",
+    "pages/my/my"
   ],
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8"
+    "navigationBarTitleText": "xxxx",
+    "navigationBarBackgroundColor": "#4285F4",
+    "backgroundColor": "#4285F4"
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap.json"
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "static/home.png",
+        "selectedIconPath": "static/home-active.png"
+      },
+      {
+        "pagePath": "pages/recommend/recommend",
+        "text": "推荐",
+        "iconPath": "static/recommend.png",
+        "selectedIconPath": "static/recommend-active.png"
+      },
+      {
+        "pagePath": "pages/platform/platform",
+        "text": "广场",
+        "iconPath": "static/platform.png",
+        "selectedIconPath": "static/platform-active.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "static/my.png",
+        "selectedIconPath": "static/my-active.png"
+      }
+    ]
+  },
+  "usingComponents": {}
 }
