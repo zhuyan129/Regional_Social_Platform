@@ -65,19 +65,10 @@
             
         }
         ,{
-            "path" : "pages/message/message",
+            "path" : "pages/chat/chat",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "消息",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/message/message",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
+                "navigationBarTitleText": "张三",
                 "enablePullDownRefresh": false
             }
             
@@ -109,6 +100,12 @@
 				"style": {
 					"navigationBarTitleText": "朋友圈",
 					"enablePullDownRefresh": true
+				}
+			},{
+				"path": "xiedongtai/xiedongtai",
+				"style": {
+					"navigationBarTitleText": "发动态",
+					"enablePullDownRefresh": false
 				}
 			}
 			]

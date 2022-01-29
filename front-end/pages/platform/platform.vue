@@ -36,8 +36,22 @@
 				</view>
 			</view>
 		</view>
+		<!-- 悬浮按钮发表动态 -->
+		<view class="floattab">
+			<uni-fab
+				:pattern="pattern"
+				:content="content"
+				horizontal="right"
+				vertical="bottom"
+				direction="horizontal"
+				:popMenu="true"
+				@trigger="trigger"
+				@fabClick="fabClick"
+			/>
+		</view>
 	</view>
 </template>
+
 <script>
 	export default {
 		data() {
@@ -67,7 +81,21 @@
 					}
 				],
 				themeColor:'#000000',
-				filterResult:''
+				filterResult:'',
+				pattern: {
+					color: 'gray',
+					backgroundColor: '#FFFFFF',
+					selectedColor: '#007AFF',
+					buttonColor:'orange'
+				},
+				content: [
+					{
+						iconPath: '/static/comment.png',
+						selectedIconPath: '/static/comment.png',
+						text: '写点什么',
+						active: false
+					}
+				]
 			}
 		},
 		onLoad() {
@@ -94,7 +122,12 @@
 				uni.navigateTo({
 					url
 				})
-			}
+			},
+			trigger(e) {
+				uni.navigateTo({
+					url:'/pages/activity/xiedongtai/xiedongtai'
+				});
+			},
 		},
 		components: {
 		        }

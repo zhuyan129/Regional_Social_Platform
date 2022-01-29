@@ -4,7 +4,8 @@
     "pages/recommend/recommend",
     "pages/platform/platform",
     "pages/message/message",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/chat/chat"
   ],
   "subPackages": [
     {
@@ -13,7 +14,8 @@
         "wenchuang/wenchuang",
         "zixun/zixun",
         "jingqu/jingqu",
-        "pengyouquan/pengyouquan"
+        "pengyouquan/pengyouquan",
+        "xiedongtai/xiedongtai"
       ]
     }
   ],
@@ -57,5 +59,6 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
 }
