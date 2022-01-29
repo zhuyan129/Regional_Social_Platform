@@ -1,25 +1,24 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		// {
-		//     "path" : "pages/login/login",
-		//     "style" :                                                                                    
-		//     {
-		//         "navigationBarTitleText": "",
-		//         "enablePullDownRefresh": false
-		//     }
-		    
-		// }
-		// ,{
-		//     "path" : "pages/tags/tags",
-		//     "style" :                                                                                    
-		//     {
-		//         "navigationBarTitleText": "",
-		//         "enablePullDownRefresh": false
-		//     }
-		    
-		// }
-		// ,
 		{
+		    "path" : "pages/login/login",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+		,{
+		    "path" : "pages/tags/tags",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "兴趣标签选择",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+		,{
             "path" : "pages/home/home",
             "style" :                                                                                    
             {
@@ -60,24 +59,6 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "我的",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/message/message",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "消息",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/message/message",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
             }
             

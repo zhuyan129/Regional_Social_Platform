@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/login/login",
+    "pages/tags/tags",
     "pages/home/home",
     "pages/recommend/recommend",
     "pages/platform/platform",
