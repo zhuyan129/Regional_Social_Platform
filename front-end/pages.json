@@ -46,6 +46,15 @@
             }
             
         }
+		,{
+		    "path" : "pages/message/message",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "消息",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
         ,{
             "path" : "pages/my/my",
             "style" :                                                                                    
@@ -55,7 +64,55 @@
             }
             
         }
+        ,{
+            "path" : "pages/message/message",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "消息",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/message/message",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
+	"subPackages": [{
+		"root": "pages/activity",
+		"pages": [{
+				"path": "wenchuang/wenchuang",
+				"style": {
+					"navigationBarTitleText": "文创",
+					"enablePullDownRefresh": true
+				}
+			},{
+				"path": "zixun/zixun",
+				"style": {
+					"navigationBarTitleText": "最新资讯",
+					"enablePullDownRefresh": true
+				}
+			},
+			{
+				"path": "jingqu/jingqu",
+				"style": {
+					"navigationBarTitleText": "景区介绍",
+					"enablePullDownRefresh": true
+				}
+			},{
+				"path": "pengyouquan/pengyouquan",
+				"style": {
+					"navigationBarTitleText": "朋友圈",
+					"enablePullDownRefresh": true
+				}
+			}
+			]
+	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "xxxx",
@@ -82,6 +139,12 @@
 				"text":"广场",
 				"iconPath":"static/platform.png",
 				"selectedIconPath":"static/platform-active.png"
+			},
+			{
+				"pagePath":"pages/message/message",
+				"text":"消息",
+				"iconPath":"static/message.png",
+				"selectedIconPath":"static/message-active.png"
 			},
 			{
 				"pagePath":"pages/my/my",

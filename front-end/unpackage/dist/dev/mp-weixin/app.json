@@ -3,9 +3,20 @@
     "pages/home/home",
     "pages/recommend/recommend",
     "pages/platform/platform",
+    "pages/message/message",
     "pages/my/my"
   ],
-  "subPackages": [],
+  "subPackages": [
+    {
+      "root": "pages/activity",
+      "pages": [
+        "wenchuang/wenchuang",
+        "zixun/zixun",
+        "jingqu/jingqu",
+        "pengyouquan/pengyouquan"
+      ]
+    }
+  ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "xxxx",
@@ -31,6 +42,12 @@
         "text": "广场",
         "iconPath": "static/platform.png",
         "selectedIconPath": "static/platform-active.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "static/message.png",
+        "selectedIconPath": "static/message-active.png"
       },
       {
         "pagePath": "pages/my/my",
