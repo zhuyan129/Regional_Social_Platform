@@ -4,7 +4,9 @@
     "pages/recommend/recommend",
     "pages/platform/platform",
     "pages/message/message",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/message/message",
+    "pages/message/message"
   ],
   "subPackages": [
     {
