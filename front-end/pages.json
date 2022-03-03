@@ -67,52 +67,74 @@
             "path" : "pages/chat/chat",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "张三",
+                "navigationBarTitleText": "李四",
                 "enablePullDownRefresh": false
             }
             
         }
     ],
-	"subPackages": [{
-		"root": "pages/activity",
-		"pages": [{
-				"path": "wenchuang/wenchuang",
-				"style": {
-					"navigationBarTitleText": "文创",
-					"enablePullDownRefresh": true
+	"subPackages": [
+		{
+			"root": "pages/activity",
+			"pages": [{
+					"path": "wenchuang/wenchuang",
+					"style": {
+						"navigationBarTitleText": "文创",
+						"enablePullDownRefresh": true
+					}
+				},{
+					"path": "zixun/zixun",
+					"style": {
+						"navigationBarTitleText": "最新资讯",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "jingqu/jingqu",
+					"style": {
+						"navigationBarTitleText": "景区介绍",
+						"enablePullDownRefresh": true
+					}
+				},{
+					"path": "pengyouquan/pengyouquan",
+					"style": {
+						"navigationBarTitleText": "朋友圈",
+						"enablePullDownRefresh": true
+					}
+				},{
+					"path": "xiedongtai/xiedongtai",
+					"style": {
+						"navigationBarTitleText": "发动态",
+						"enablePullDownRefresh": false
+					}
 				}
-			},{
-				"path": "zixun/zixun",
-				"style": {
-					"navigationBarTitleText": "最新资讯",
-					"enablePullDownRefresh": true
-				}
-			},
-			{
-				"path": "jingqu/jingqu",
-				"style": {
-					"navigationBarTitleText": "景区介绍",
-					"enablePullDownRefresh": true
-				}
-			},{
-				"path": "pengyouquan/pengyouquan",
-				"style": {
-					"navigationBarTitleText": "朋友圈",
-					"enablePullDownRefresh": true
-				}
-			},{
-				"path": "xiedongtai/xiedongtai",
-				"style": {
-					"navigationBarTitleText": "发动态",
-					"enablePullDownRefresh": false
-				}
-			}
 			]
+		},{
+			"root":"pages/mylist",
+			"pages":[{
+					"path":"star/star",
+					"style":{
+						"navigationBarTitleText":"收藏",
+						"enablePullDownRefresh": false
+					}
+				},{
+					"path":"footprint/footprint",
+					"style":{
+						"navigationBarTitleText":"足迹",
+						"enablePullDownRefresh": false
+					}
+				},{
+					"path":"friends/friends",
+					"style":{
+						"navigationBarTitleText":"好友",
+						"enablePullDownRefresh": false
+					}
+				}]
 	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "xxxx",
-		"navigationBarBackgroundColor": "#4285F4",
+		"navigationBarBackgroundColor": "#63B8FF",
 		"backgroundColor": "#4285F4"
 	},
 	"tabBar":{
@@ -149,5 +171,16 @@
 				"selectedIconPath":"static/my-active.png"
 			}
 		]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
 	}
+	
 }
